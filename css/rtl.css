@@ -1,0 +1,195 @@
+/* ============================================
+   RTL OVERRIDES — Arabic
+   ============================================ */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-arabic), var(--font-body);
+}
+
+/* Navigation */
+html[dir="rtl"] .nav {
+  flex-direction: row;
+}
+
+html[dir="rtl"] .nav-links {
+  flex-direction: row;
+}
+
+html[dir="rtl"] .nav-links a {
+  text-align: right;
+}
+
+html[dir="rtl"] .brand {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Header CTA and lang switcher order in nav */
+html[dir="rtl"] .nav .btn {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Hero overlay gradient */
+html[dir="rtl"] .hero-overlay {
+  background: linear-gradient(225deg,
+    rgba(0,19,40,0.75) 0%,
+    rgba(0,119,182,0.35) 50%,
+    rgba(45,106,79,0.25) 100%
+  );
+}
+
+/* Content alignment */
+html[dir="rtl"] .hero-content p {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Cards */
+html[dir="rtl"] .card-badge {
+  left: auto;
+  right: 0.75rem;
+}
+
+html[dir="rtl"] .card-actions {
+  flex-direction: row-reverse;
+}
+
+/* Filter row */
+html[dir="rtl"] .filter-row {
+  justify-content: flex-start;
+}
+
+/* FAQ */
+html[dir="rtl"] .faq-question {
+  text-align: right;
+}
+
+html[dir="rtl"] .faq-question::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Features */
+html[dir="rtl"] .feature-card {
+  text-align: center;
+}
+
+/* Steps */
+html[dir="rtl"] .step::after {
+  left: auto;
+  right: calc(50% + 3rem);
+  background: linear-gradient(270deg, var(--color-primary), transparent);
+}
+
+/* Article */
+html[dir="rtl"] .article-body blockquote {
+  border-left: none;
+  border-right: 4px solid var(--color-primary);
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+
+html[dir="rtl"] .breadcrumb {
+  flex-direction: row-reverse;
+}
+
+/* Tabs */
+html[dir="rtl"] .tabs {
+  flex-direction: row-reverse;
+}
+
+/* Forms */
+html[dir="rtl"] .form-group label {
+  text-align: right;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] select,
+html[dir="rtl"] textarea {
+  text-align: right;
+}
+
+/* Contact items */
+html[dir="rtl"] .contact-item {
+  flex-direction: row;
+}
+
+/* Share bar */
+html[dir="rtl"] .share-bar {
+  flex-direction: row-reverse;
+}
+
+/* Rating */
+html[dir="rtl"] .review-stars {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+html[dir="rtl"] .review-header {
+  flex-direction: row;
+}
+
+/* Footer */
+html[dir="rtl"] .footer-social {
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .footer-bottom {
+  flex-direction: row-reverse;
+}
+
+/* Lightbox */
+html[dir="rtl"] .lightbox-close {
+  right: auto;
+  left: 1.5rem;
+}
+
+/* Testimonials */
+html[dir="rtl"] .testimonial-author {
+  flex-direction: row-reverse;
+}
+
+/* Newsletter */
+html[dir="rtl"] .newsletter-form {
+  flex-direction: row-reverse;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  html[dir="rtl"] .nav-links {
+    text-align: right;
+  }
+
+  html[dir="rtl"] .nav-links a {
+    text-align: right;
+  }
+
+  html[dir="rtl"] body.nav-open .lang-switcher {
+    justify-content: center;
+  }
+}
+
+/* Back to top */
+html[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 2rem;
+}
+
+/* Pagination */
+html[dir="rtl"] .pagination {
+  flex-direction: row-reverse;
+}
+
+/* Sejour gallery */
+html[dir="rtl"] .sejour-gallery .main-img {
+  grid-column: auto;
+}
+
+/* Featured article */
+html[dir="rtl"] .article-featured {
+  direction: rtl;
+}
