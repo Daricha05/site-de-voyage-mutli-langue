@@ -42,7 +42,8 @@ Design **moderne, immersif et chaleureux** — grandes photos de destinations, c
 
 ## 📸 Aperçu
 
-> *Des captures d'écran seront ajoutées prochainement.*
+![Page d'accueil - Horizons voyages](screenshot-home.png)
+> *Vue de la page d'accueil avec hero.*
 
 La page d'accueil comprend :
 - Hero plein écran avec overlay dégradé et CTA
